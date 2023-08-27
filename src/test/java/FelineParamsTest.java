@@ -27,10 +27,10 @@ public class FelineParamsTest {
 
     @Spy
     Feline felineSpy;
-    Feline feline = new Feline();
 
     @Test
     public void getKittensAssertReturnCountTest(){
+        Feline feline = new Feline();
         Assert.assertEquals(countOfKittens, feline.getKittens(countOfKittens));
     }
 
