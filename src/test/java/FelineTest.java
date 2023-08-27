@@ -39,14 +39,14 @@ public class FelineTest{
     }
 
     @Test
-    public void eatMeatReturnValueEqualsTest() throws Exception {
+    public void eatMeatAssertReturnValueEqualsTest() throws Exception {
         List<String> food = List.of("Животные", "Птицы", "Рыба");
         Feline feline = new Feline();
         Assert.assertEquals(food, feline.eatMeat());
     }
 
     @Test
-    public void eatMeatCountTimeTest() throws Exception {
+    public void eatMeatCountTimesAndArgumentTest() throws Exception {
         felineSpy.eatMeat();
         Mockito.verify(felineSpy, Mockito.times(1)).eatMeat();
         Mockito.verify(felineSpy, Mockito.times(1)).getFood("Хищник");

@@ -64,7 +64,7 @@ public class LionParamsTest {
     }
 
     @Test
-    public void getFoodCountTimeEqualsTest() throws Exception{
+    public void getFoodCountTimesAndArgumentTest() throws Exception{
         lionSpy = new Lion(sex, felineSpy);
         lionSpy.getFood();
         Mockito.verify(felineSpy, Mockito.times(1)).getFood("Хищник");

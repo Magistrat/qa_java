@@ -35,7 +35,7 @@ public class FelineParamsTest {
     }
 
     @Test
-    public void getKittensCountTimeAndArgumentTest(){
+    public void getKittensCountTimesAndArgumentTest(){
         felineSpy.getKittens(countOfKittens);
         Mockito.verify(felineSpy, Mockito.times(1)).getKittens(countOfKittens);
     }
