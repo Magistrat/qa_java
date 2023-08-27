@@ -13,10 +13,11 @@ public class FelineTest{
 
     @Spy
     Feline felineSpy;
+    Feline feline;
 
     @Test
     public void getFamilyAssertReturnFamilyTest(){
-        Feline feline = new Feline();
+        feline = new Feline();
         Assert.assertEquals("Кошачьи", feline.getFamily());
     }
 
@@ -28,7 +29,7 @@ public class FelineTest{
 
     @Test
     public void getKittensAssertReturnCountNoArgumentTest(){
-        Feline feline = new Feline();
+        feline = new Feline();
         Assert.assertEquals(1, feline.getKittens());
     }
 
@@ -41,7 +42,7 @@ public class FelineTest{
     @Test
     public void eatMeatAssertReturnValueEqualsTest() throws Exception {
         List<String> food = List.of("Животные", "Птицы", "Рыба");
-        Feline feline = new Feline();
+        feline = new Feline();
         Assert.assertEquals(food, feline.eatMeat());
     }
 
